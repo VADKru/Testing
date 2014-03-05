@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <qsize.h>
+#include <QString>
+#include <QFile>
+#include <QTextStream>
+#include <QDebug>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +22,8 @@ public:
     
 private:
     Ui::MainWindow *ui;
+private slots:
+    void Start();
 };
 
 #endif // MAINWINDOW_H
